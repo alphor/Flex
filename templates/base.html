@@ -109,8 +109,8 @@
       {% endif %}
 
       <ul class="social">
-        {% for name, link in SOCIAL %}
-        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+        {% for name, link, image in SOCIAL %}
+        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><img src="{{ image }}"/></a></li>
         {% endfor %}
       </ul>
     </div>
